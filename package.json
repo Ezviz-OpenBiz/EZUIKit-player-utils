@@ -9,7 +9,6 @@
   "keywords": [],
   "author": "Ezviz-OpenBiz",
   "license": "MIT",
-  
   "devDependencies": {
     "rimraf": "^6.1.2",
     "lerna": "8.2.4"
@@ -23,10 +22,10 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Ezviz-OpenBiz/EZUIKit-player-controls.git"
+    "url": "git+https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils.git"
   },
   "bugs": {
-    "url": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-controls/issues"
+    "url": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils/issues"
   },
-  "homepage": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-controls#readme"
+  "homepage": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils#readme"
 }
