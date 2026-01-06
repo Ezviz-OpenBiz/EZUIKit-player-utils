@@ -1,7 +1,7 @@
 {
-  "name": "EZUIKit-player-controls",
+  "name": "EZUIKit-player-utils",
   "version": "0.0.0",
-  "description": "ezuikit player controls",
+  "description": "ezuikit player utils",
   "scripts": {
     "build:example": "pnpm --filter \"@examples/*\" run build"
   },
