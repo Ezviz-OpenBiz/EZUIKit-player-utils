@@ -1,0 +1,31 @@
+{
+  "name": "@ezuikit/utils-logger",
+  "version": "2.0.1",
+  "description": "logger utils",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "logger",
+    "ezuikit",
+    "ezuikit-utils",
+    "utils"
+  ],
+  "author": "Ezviz-OpenBiz",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils/issues"
+  },
+  "homepage": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils#readme"
+}

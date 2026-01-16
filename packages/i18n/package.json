@@ -1,0 +1,34 @@
+{
+  "name": "@ezuikit/utils-i18n",
+  "version": "2.0.1",
+  "description": "i18n utils",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "i18n",
+    "ezuikit",
+    "ezuikit-utils",
+    "utils"
+  ],
+  "author": "Ezviz-OpenBiz",
+  "license": "MIT",
+  "dependencies": {
+    "deepmerge": "^4.3.1"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils/issues"
+  },
+  "homepage": "https://github.com/Ezviz-OpenBiz/EZUIKit-player-utils#readme"
+}
