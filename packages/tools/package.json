@@ -1,6 +1,6 @@
 {
   "name": "@ezuikit/utils-tools",
-  "version": "2.0.3",
+  "version": "2.0.4",
   "description": "tools utils",
   "main": "dist/index.js",
   "umd": "dist/index.umd.js",
