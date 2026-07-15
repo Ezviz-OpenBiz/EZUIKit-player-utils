@@ -92,6 +92,6 @@ jobs:
           tag_name: ${{ github.ref_name }}
           name: ${{ github.ref_name }}
           generate_release_notes: true
-          prerelease: ${{ steps.determine_tag.outputs.tag != 'latest' }}
+          prerelease: false
           files: |
             Release.txt
