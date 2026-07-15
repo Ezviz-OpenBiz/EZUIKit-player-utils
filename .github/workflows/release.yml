@@ -2,11 +2,11 @@ name: NPM Publish
 on:
   push:
     tags:
-      - 'v*'
+      - "v*"
 
 permissions:
   id-token: write # Required for OIDC
-  contents: read
+  contents: write
 
 jobs:
   publish:
@@ -23,8 +23,6 @@ jobs:
         with:
           node-version: 24
           registry-url: https://registry.npmjs.org
-
-      - run: npm install -g npm@latest
 
       - name: Setup pnpm
         uses: pnpm/action-setup@v4
@@ -81,3 +79,19 @@ jobs:
             # 使用 from-package 确保发布的是当前 package.json 里的版本
             pnpm --filter "$NAME" publish --access public --tag "$TAG" --no-git-checks
           done
+
+      - name: Build Release.txt
+        run: echo ${{ github.sha }} > Release.txt
+      - name: Test
+        run: cat Release.txt
+
+      # 自动创建 GitHub Release
+      - name: Create GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: ${{ github.ref_name }}
+          generate_release_notes: true
+          prerelease: ${{ steps.determine_tag.outputs.tag != 'latest' }}
+          files: |
+            Release.txt
