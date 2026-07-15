@@ -1,0 +1,26 @@
+{
+  "name": "@ezuikit/utils-service",
+  "version": "1.0.0-beta.1",
+  "description": "service utils",
+  "main": "dist/index.js",
+  "umd": "dist/index.umd.js",
+  "types": "dist/types/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "keywords": [
+    "service",
+    "ezuikit",
+    "ezuikit-utils",
+    "utils"
+  ],
+  "author": "Ezviz-OpenBiz",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "dependencies": {
+    "@ezuikit/utils-tools": "^2.0.5"
+  }
+}
