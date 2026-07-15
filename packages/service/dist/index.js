@@ -1,5 +1,5 @@
 /*
-* @ezuikit/utils-service v1.0.0-beta.1
+* @ezuikit/utils-service v2.0.0-beta.3
 * service utils
 * Copyright (c) 2026-07-15 Ezviz-OpenBiz
 * Released under the MIT License.
