@@ -23,6 +23,12 @@ importers:
 
   packages/logger: {}
 
+  packages/service:
+    dependencies:
+      '@ezuikit/utils-tools':
+        specifier: ^2.0.5
+        version: link:../tools
+
   packages/tools: {}
 
 packages:
