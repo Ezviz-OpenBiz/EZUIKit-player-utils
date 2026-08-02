@@ -1,8 +1,17 @@
 /**
- * 获取SDK支持的视频编码
+ * 根据编码格式名称数组，计算 SDK 支持的视频编码位掩码（vc）值。
+ *
+ * @remarks
+ * 每种编码对应一个二进制位：`h264=1`、`h265=2`、`h266=4`、`vp8=8`、`vp9=16`、`av1=32`。
+ * 多个编码通过按位求和组合，未知编码按 `0` 处理。编码名称大小写不敏感。
+ *
+ * @param CODECS - 编码格式名称数组，如 `['h264', 'h265']`
+ * @returns 组合后的 vc 数值
  * @example
- * ```
- * getVC() // 1
+ * ```ts
+ * getQueryVC(['h264']);          // 1
+ * getQueryVC(['h264', 'h265']);  // 3
+ * getQueryVC(['H265']);          // 2（大小写不敏感）
  * ```
  */
 export declare const getQueryVC: (CODECS: string[]) => number;

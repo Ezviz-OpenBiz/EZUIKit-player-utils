@@ -7,7 +7,7 @@
  * @example
  *
  * ```ts
- * pick({a: "1", b: "b"}, ['a']) // => {a: 'a'}
+ * pick({ a: '1', b: 'b' }, ['a']); // => { a: '1' }
  * ```
  */
 export declare function pick(obj: Record<string | number, any>, keys: string[]): {};

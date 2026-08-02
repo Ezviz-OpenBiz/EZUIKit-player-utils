@@ -27,12 +27,19 @@ export interface EzopenURL {
     definition?: EzopenDefinition;
 }
 /**
- * 解析ezopen 协议 url
- * @param {string} url ezopen url
- * @returns {EzopenURL}
+ * 解析 ezopen 协议 URL，提取设备序列号、通道号、播放类型等信息。
  *
+ * @remarks
+ * 支持形如 `ezopen://[验证码@]host/设备序列号/通道号.[清晰度|存储类型].类型?query` 的地址。
+ * 当传入的 URL 不是 ezopen 协议时，返回空对象 `{}`。
+ *
+ * @param url - ezopen 协议地址
+ * @returns 解析后的 {@link EzopenURL}（部分字段可选）；非 ezopen 协议时返回空对象
+ * @example
  * ```ts
- * parseEzopenUrl("ezopen://open.ys7.com/C116331000/1.cloud.rec?a=00000&b=23&c=%E4%BD%A0%E5%A5%BD%E5%95%8A")
+ * parseEzopenUrl(
+ *   'ezopen://open.ys7.com/C116331000/1.cloud.rec?a=00000&b=23&c=%E4%BD%A0%E5%A5%BD%E5%95%8A',
+ * );
  * ```
  */
 export declare function parseEzopenUrl(url: string): Partial<EzopenURL>;
