@@ -25,6 +25,8 @@ export interface EzopenURL {
     recType?: EzopenRecType;
     /** 清晰度 */
     definition?: EzopenDefinition;
+    /** 1: 主码流  2：子码流   3： 复合码流 */
+    streamTypeIn?: 1 | 2 | 3 | number;
 }
 /**
  * 解析 ezopen 协议 URL，提取设备序列号、通道号、播放类型等信息。
