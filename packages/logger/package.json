@@ -1,6 +1,6 @@
 {
   "name": "@ezuikit/utils-logger",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "logger utils",
   "main": "dist/index.js",
   "umd": "dist/index.umd.js",
@@ -12,7 +12,8 @@
     "logger",
     "ezuikit",
     "ezuikit-utils",
-    "utils"
+    "utils",
+    "context"
   ],
   "author": "Ezviz-OpenBiz",
   "license": "MIT",
